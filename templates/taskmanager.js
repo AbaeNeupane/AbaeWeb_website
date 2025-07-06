@@ -11,14 +11,21 @@ document.addEventListener('DOMContentLoaded', function() {
         taskList.innerHTML = '';
         tasks.forEach((task, index) => {
             const taskItem = document.createElement('div');
-            taskItem.className = `task-item ${task.completed ? 'completed' : ''}`;
+            taskItem.className = `task-card${task.completed ? ' completed' : ''}`;
+
             taskItem.innerHTML = `
-                <div>
-                    <strong>${task.title}</strong> - ${task.description} 
-                    <br> Deadline: ${task.deadline} | Priority: ${task.priority} | Category: ${task.category}
+                <div class="task-title">${task.title}</div>
+                <div class="task-meta">
+                    <span>Deadline: ${task.deadline}</span>
+                    <span>Priority: ${task.priority}</span>
+                    <span>Category: ${task.category}</span>
                 </div>
-                <div class="actions">
-                    <button onclick="markCompleted(${index})">${task.completed ? 'Undo' : 'Complete'}</button>
+                <div class="task-desc">${task.description}</div>
+                <div class="task-actions">
+                    ${task.completed 
+                        ? `<button class="complete-btn" disabled>Completed</button>`
+                        : `<button class="complete-btn" onclick="markCompleted(${index})">Complete</button>`
+                    }
                     <button onclick="editTask(${index})">Edit</button>
                     <button onclick="deleteTask(${index})">Delete</button>
                 </div>
