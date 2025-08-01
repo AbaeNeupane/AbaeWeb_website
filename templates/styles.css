@@ -146,6 +146,23 @@ h3 {
     font-weight: 500;
 }
 
+/* Add to styles.css */
+img[alt="Avishek Neupane"] {
+    display: block;
+    margin: 18px auto 28px auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #22c55e;      /* Green outline */
+    box-shadow: 0 0 0 8px #e6f9ed;  /* Soft green glow */
+    width: 250px;
+    height: 250px;
+    transition: box-shadow 0.3s;
+}
+
+img[alt="Avishek Neupane"]:hover {
+    box-shadow: 0 0 0 8px #22c55e, 0 0 8px 8px #16a34a;
+}
+
 footer {
     background: #22c55e;
     color: #fff;
@@ -192,19 +209,3 @@ footer hr {
         font-size: 0.9rem;
     }
 
-/* Add to styles.css */
-img[alt="Avishek Neupane"] {
-    display: block;
-    margin: 18px auto 28px auto;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #22c55e;      /* Green outline */
-    box-shadow: 0 0 0 8px #e6f9ed;  /* Soft green glow */
-    width: 250px;
-    height: 250px;
-    transition: box-shadow 0.3s;
-}
-
-img[alt="Avishek Neupane"]:hover {
-    box-shadow: 0 0 0 8px #22c55e, 0 0 8px 8px #16a34a;
-}
