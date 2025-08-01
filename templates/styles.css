@@ -1,176 +1,210 @@
 body {
+    background: linear-gradient(120deg, #e6f9ed 60%, #d1fae5 100%);
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f6faf7;
-    color: #222;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+}
+.container {
+    background: #fff;
+    max-width: 600px;
+    margin: 48px auto 32px auto;
+    padding: 36px 30px 28px 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 32px rgba(34,197,94,0.11);
 }
 
 header {
-    background: linear-gradient(90deg, #2ecc40 60%, #b2f7cc 100%);
+    background: #22c55e;
     color: #fff;
-    padding: 30px 0 10px 0;
+    padding: 24px 0 10px 0;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(44, 204, 64, 0.08);
+    border-bottom: 3px solid #16a34a;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 700;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 18px 0 0 0;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 32px;
 }
 
-nav a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
     font-size: 1.1rem;
-    transition: color 0.2s;
+    font-weight: 500;
+    padding: 6px 18px;
+    border-radius: 5px;
+    transition: background 0.2s, color 0.2s;
 }
 
-nav a:hover {
-    color: #145a32;
-    text-decoration: underline;
+nav ul li a:hover,
+nav ul li a:focus {
+    background: #16a34a;
+    color: #e6f9ed;
+}
+
+.about-text {
+    background: #f0fdf4;
+    border-left: 5px solid #22c55e;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto 32px auto;
+    padding: 22px 28px;
+    box-shadow: 0 2px 12px rgba(34,197,94,0.09);
+    font-size: 1.08rem;
+    color: #14532d;
 }
 
 section {
-    background: #fff;
     margin: 32px auto;
-    max-width: 800px;
-    border-radius: 14px;
-    box-shadow: 0 4px 24px rgba(44, 204, 64, 0.08);
-    padding: 32px 28px 28px 28px;
+    max-width: 900px;
+    padding: 0 18px;
 }
 
 h2 {
-    color: #2ecc40;
+    color: #22c55e;
     font-size: 2rem;
-    margin-top: 0;
     margin-bottom: 18px;
+    text-align: center;
     font-weight: 700;
-    letter-spacing: 1px;
 }
 
 h3 {
-    color: #145a32;
-    margin-bottom: 8px;
+    color: #16a34a;
+    font-size: 1.3rem;
     margin-top: 24px;
-    font-size: 1.2rem;
-    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(44, 204, 64, 0.10);
-    margin-bottom: 18px;
-    border: 2px solid #b2f7cc;
-    background: #eafaf1;
-}
-
-a {
-    color: #2ecc40;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-a:hover {
-    color: #145a32;
-    text-decoration: underline;
-}
-
-div {
-    background: #f6faf7;
+#projects div {
+    background: #f0fdf4;
     border-radius: 10px;
-    padding: 18px 18px 12px 18px;
-    margin-bottom: 20px;
-    border: 1px solid #e0f2e9;
-    box-shadow: 0 1px 6px rgba(44, 204, 64, 0.06);
+    box-shadow: 0 2px 10px rgba(34,197,94,0.07);
+    padding: 18px 22px 18px 22px;
+    margin-bottom: 22px;
+    text-align: center;
+    border-left: 5px solid #22c55e;
 }
 
-ul {
-    padding-left: 18px;
+#projects img {
+    border-radius: 8px;
+    margin: 10px 0 14px 0;
+    border: 2px solid #22c55e;
+}
+
+#projects a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #22c55e;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 16px;
+    border-radius: 5px;
+    background: #e6f9ed;
+    transition: background 0.2s, color 0.2s;
+}
+
+#projects a:hover {
+    background: #22c55e;
+    color: #fff;
+}
+#contact {
+    background: #f0fdf4;
+    border-radius: 10px;
+    padding: 20px 24px;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(34,197,94,0.07);
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0 0;
+    font-size: 1.07rem;
+}
+
+#contact li {
+    margin-bottom: 8px;
+}
+
+#contact a {
+    color: #16a34a;
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 footer {
-    background: #eafaf1;
-    color: #145a32;
+    background: #22c55e;
+    color: #fff;
     text-align: center;
     padding: 18px 0 10px 0;
-    font-size: 1rem;
-    border-top: 2px solid #b2f7cc;
     margin-top: 40px;
+    border-top: 3px solid #16a34a;
 }
 
-#about {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-#about img {
-    display: block;
-    margin: 22px auto 32px auto;
-    max-width: 250px;
-    width: 90%;
-    max-height: 250px;
-    height: auto;
-    border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(44, 204, 64, 0.13);
-    border: 3px solid #b2f7cc;
-    background: #eafaf1;
-}
-
-#about .about-text {
-    background: none;
+footer hr {
     border: none;
-    margin: 0 auto;
-    padding: 0 10px;
-    max-width: 700px;
-    text-align: justify-center;
-    display: block;
+    border-top: 2px solid #16a34a;
+    margin: 0 0 12px 0;
 }
 
-@media (max-width: 600px) {
-    section {
-        padding: 16px 6px;
-    }
-    img {
-        width: 100% !important;
-        height: auto !important;
-    }
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    #about img {
+@media (max-width: 700px) {
+    .about-text, section {
         max-width: 98vw;
-        width: 100%;
+        padding: 0 4vw;
     }
-    #about .about-text {
-        padding: 0 2vw;
+    header h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    #projects img {
+        width: 90vw !important;
+        height: auto !important;
+        max-width: 350px;
+        margin: 0 auto;
     }
 }
+    .task-title {
+        font-weight: 600;
+    }
+    .task-desc {
+        font-size: 0.95rem;
+    }
+    .task-meta {
+        font-size: 0.9rem;
+    }
 
-@media (max-width: 800px) {
-    #about {
-        flex-direction: column;
-        align-items: center;
-        gap: 18px;
-    }
-    #about .about-text {
-        width: 100%;
-    }
+/* Add to styles.css */
+img[alt="Avishek Neupane"] {
+    display: block;
+    margin: 18px auto 28px auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #22c55e;      /* Green outline */
+    box-shadow: 0 0 0 8px #e6f9ed;  /* Soft green glow */
+    width: 250px;
+    height: 250px;
+    transition: box-shadow 0.3s;
+}
+
+img[alt="Avishek Neupane"]:hover {
+    box-shadow: 0 0 0 8px #22c55e, 0 0 8px 8px #16a34a;
 }
