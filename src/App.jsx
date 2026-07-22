@@ -6,39 +6,19 @@ const TYPED_STRINGS = [
   'Web Developer',
   'Open Source Enthusiast',
   'Problem Solver',
-  'UI/UX Curious',
+  'Data Science Curious',
 ]
 
 const SKILLS = [
   { cat: 'Frontend',        items: [{ n: 'HTML & CSS', p: 88 }, { n: 'JavaScript', p: 76 }, { n: 'React', p: 62 }] },
-  { cat: 'Backend & Lang',  items: [{ n: 'Python', p: 68 }, { n: 'C / C++', p: 72 }] },
-  { cat: 'Tools & Infra',   items: [{ n: 'Git & GitHub', p: 82 }, { n: 'Linux / CLI', p: 67 }, { n: 'VS Code', p: 90 }] },
+  { cat: 'Backend & Lang',  items: [{ n: 'Python', p: 68 }] },
+  { cat: 'Tools & Infra',   items: [{ n: 'Git & GitHub', p: 82 }, { n: 'VS Code', p: 90 }] },
   { cat: 'CS Fundamentals', items: [{ n: 'Data Structures', p: 63 }, { n: 'Algorithms', p: 58 }] },
 ]
 
-const TECH = ['HTML5','CSS3','JavaScript','React','Python','C++','Git','Linux','Tailwind','Node.js','VS Code','GitHub']
+const TECH = ['HTML5','CSS3','Tailwind','JavaScript','React','Python', 'Django','Git','VS Code','GitHub']
 
 const PROJECTS = [
-  {
-    title: 'Weather App',
-    desc: 'Real-time weather dashboard pulling live data from a public API — displays temperature, humidity, wind speed, and a 5-day forecast with a clean, responsive layout.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'REST API'],
-    color: '#5eead4',
-    icon: '🌤️',
-    link: 'https://avishekneupane.com.np/templates/weather.html',
-    featured: false,
-    num: '01',
-  },
-  {
-    title: 'Task Management',
-    desc: 'A fully functional productivity tool with task creation, priority flags, and persistent storage so your to-do list survives page reloads.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'LocalStorage'],
-    color: '#818cf8',
-    icon: '✅',
-    link: 'https://avishekneupane.com.np/templates/taskmanager.html',
-    featured: false,
-    num: '02',
-  },
   {
     title: 'Portfolio v1',
     desc: 'My first portfolio site — built from scratch with vanilla HTML, CSS & JS to learn by doing. The starting point that inspired this redesign.',
@@ -47,7 +27,7 @@ const PROJECTS = [
     icon: '🎨',
     link: 'https://avishekneupane.com.np/',
     featured: false,
-    num: '03',
+    num: '01',
   },
 ]
 
@@ -339,7 +319,7 @@ function About() {
               <a href="https://github.com/AbaeNeupane" target="_blank" rel="noreferrer" className="s-icon" title="GitHub">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
               </a>
-              <a href="mailto:neupane.avishek.2060@gmail.com" className="s-icon" title="Email">
+              <a href="abeneupane5@gmail.com" className="s-icon" title="Email">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </a>
               <a href="tel:+9779861997464" className="s-icon" title="Phone">
@@ -363,7 +343,7 @@ function Skills() {
         <div className="rv" style={{ marginBottom: 56 }}>
           <div className="section-label">What I Can Do</div>
           <h2 className="section-title">My <span className="hl">Skills</span></h2>
-          <p className="section-sub">Technologies and tools I've picked up on my journey — always adding more to the list.</p>
+          <p className="section-sub">Technologies and tools I've picked up on my journey, always adding more to the list.</p>
         </div>
 
         <div className="skills-grid">
@@ -466,7 +446,7 @@ function Projects() {
         <div className="rv" style={{ marginBottom: 56 }}>
           <div className="section-label">What I've Built</div>
           <h2 className="section-title">Featured <span className="hl">Projects</span></h2>
-          <p className="section-sub">A selection of things I've built — each one taught me something new.</p>
+          <p className="section-sub">A selection of things I've built, each one taught me something new.</p>
         </div>
 
         <div className="projects-grid">
@@ -506,7 +486,7 @@ function Contact() {
   }
 
   const cinfos = [
-    { icon: '📧', label: 'EMAIL', val: 'neupane.avishek.2060@gmail.com', href: 'mailto:neupane.avishek.2060@gmail.com' },
+    { icon: '📧', label: 'EMAIL', val: 'abeneupane5@gmail.com', href: 'abeneupane5@gmail.com' },
     { icon: '📞', label: 'PHONE', val: '+977 9861997464',                href: 'tel:+9779861997464' },
     { icon: '📍', label: 'LOCATION', val: 'Bhaktapur, Nepal 🇳🇵',       href: null },
     { icon: '🕐', label: 'TIMEZONE', val: 'UTC+5:45 (NPT)',              href: null },
@@ -575,7 +555,7 @@ function Footer() {
   return (
     <footer>
       <div className="footer-txt">
-        Designed & coded by <span>Avishek Neupane</span> · © 2024 · Made with ❤️ in Nepal
+       <span>Avishek Neupane</span> · © 2026
       </div>
       <div className="footer-social">
         <a href="https://www.facebook.com/abe.neupane/" target="_blank" rel="noreferrer" className="s-icon" title="Facebook">
@@ -584,7 +564,7 @@ function Footer() {
         <a href="https://github.com/AbaeNeupane" target="_blank" rel="noreferrer" className="s-icon" title="GitHub">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
         </a>
-        <a href="mailto:neupane.avishek.2060@gmail.com" className="s-icon" title="Email">
+        <a href="abeneupane5@gmail.com" className="s-icon" title="Email">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
       </div>
