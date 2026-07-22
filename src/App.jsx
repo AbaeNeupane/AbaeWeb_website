@@ -480,13 +480,13 @@ function Contact() {
     if (!form.name || !form.email || !form.message) return
     const s = encodeURIComponent(`Portfolio Contact from ${form.name}`)
     const b = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)
-    window.location.href = `mailto:neupane.avishek.2060@gmail.com?subject=${s}&body=${b}`
+    window.location.href = `abeneupane5@gmail.com?subject=${s}&body=${b}`
     setSent(true)
     setTimeout(() => setSent(false), 3000)
   }
 
   const cinfos = [
-    { icon: '📧', label: 'EMAIL', val: 'abeneupane5@gmail.com', href: 'abeneupane5@gmail.com' },
+    { icon: '📧', label: 'EMAIL', val: 'abeneupane5@gmail.com', href: null },
     { icon: '📞', label: 'PHONE', val: '+977 9861997464',                href: 'tel:+9779861997464' },
     { icon: '📍', label: 'LOCATION', val: 'Bhaktapur, Nepal 🇳🇵',       href: null },
     { icon: '🕐', label: 'TIMEZONE', val: 'UTC+5:45 (NPT)',              href: null },
