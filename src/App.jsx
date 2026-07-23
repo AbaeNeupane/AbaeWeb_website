@@ -173,7 +173,7 @@ function Navbar() {
             <span style={{ color: 'var(--c1)', marginRight: 4, fontSize: '.65rem' }}>0{i+1}.</span>{id}
           </a>
         ))}
-        <a href="mailto:neupane.avishek.2060@gmail.com" className="nav-cta">Hire Me</a>
+        <a href="mailto:abeneupane5@gmail.com" className="nav-cta">Hire Me</a>
       </div>
     </nav>
   )
@@ -480,13 +480,13 @@ function Contact() {
     if (!form.name || !form.email || !form.message) return
     const s = encodeURIComponent(`Portfolio Contact from ${form.name}`)
     const b = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)
-    window.location.href = `abeneupane5@gmail.com?subject=${s}&body=${b}`
+    window.location.href = `mailto:abeneupane5@gmail.com?subject=${s}&body=${b}`
     setSent(true)
     setTimeout(() => setSent(false), 3000)
   }
 
   const cinfos = [
-    { icon: '📧', label: 'EMAIL', val: 'abeneupane5@gmail.com', href: null },
+    { icon: '📧', label: 'EMAIL', val: 'abeneupane5@gmail.com', href:'mailto:abeneupane5@gmail.com' },
     { icon: '📞', label: 'PHONE', val: '+977 9861997464',                href: 'tel:+9779861997464' },
     { icon: '📍', label: 'LOCATION', val: 'Bhaktapur, Nepal 🇳🇵',       href: null },
     { icon: '🕐', label: 'TIMEZONE', val: 'UTC+5:45 (NPT)',              href: null },
@@ -564,7 +564,7 @@ function Footer() {
         <a href="https://github.com/AbaeNeupane" target="_blank" rel="noreferrer" className="s-icon" title="GitHub">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
         </a>
-        <a href="abeneupane5@gmail.com" className="s-icon" title="Email">
+        <a href="mailto:abeneupane5@gmail.com" className="s-icon" title="Email">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
       </div>
